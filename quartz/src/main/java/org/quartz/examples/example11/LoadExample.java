@@ -65,7 +65,7 @@ public class LoadExample {
           .build();
 
       // tell the job to delay some small amount... to simulate work...
-      long timeDelay = (long) (java.lang.Math.random() * 2500);
+      long timeDelay = (long) ( 1000 * 15 );
       job.getJobDataMap().put(SimpleJob.DELAY_TIME, timeDelay);
 
       Trigger trigger = newTrigger().withIdentity("trigger_" + count, "group_1")

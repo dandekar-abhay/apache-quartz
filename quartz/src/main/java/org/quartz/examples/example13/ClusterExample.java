@@ -193,7 +193,7 @@ public class ClusterExample {
   }
 
   public static void main(String[] args) throws Exception {
-    boolean clearJobs = false;
+    boolean clearJobs = true;
     boolean scheduleJobs = true;
 
     for (String arg : args) {

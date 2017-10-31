@@ -71,7 +71,7 @@ public class BadJob1 implements Job {
     try {
       calculation = 4815 / denominator;
     } catch (Exception e) {
-      _log.info("--- Error in job!");
+      _log.info("--- Error in job1!");
       JobExecutionException e2 = new JobExecutionException(e);
 
       // fix denominator so the next time this job run

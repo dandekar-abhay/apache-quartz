@@ -70,13 +70,13 @@ public class BadJob2 implements Job {
             int zero = 0;
             calculation = 4815 / zero;
         } catch (Exception e) {
-            _log.info("--- Error in job!");
+            _log.info("--- Error in job2!");
             JobExecutionException e2 = 
                 new JobExecutionException(e);
             // Quartz will automatically unschedule
             // all triggers associated with this job
             // so that it does not run again
-            e2.setUnscheduleAllTriggers(true);
+            //e2.setUnscheduleAllTriggers(true);
             throw e2;
         }
 

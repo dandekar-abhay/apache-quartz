@@ -91,7 +91,7 @@ public class MisfireExample {
         .withIdentity("trigger2", "group1")
         .startAt(startTime)
         .withSchedule(simpleSchedule().withIntervalInSeconds(3).repeatForever()
-                          .withMisfireHandlingInstructionNowWithExistingCount()) // set misfire instructions
+                         .withMisfireHandlingInstructionNowWithExistingCount()) // set misfire instructions
         .build();
 
     ft = sched.scheduleJob(job, trigger);
